@@ -1,0 +1,318 @@
+\documentclass[brazilian,svgnames,notes=hide,14pt, aspectratio=169]{beamer}
+\mode<presentation>
+\usepackage{macros}
+
+\def\presentationtitle{Resolução Questão de Matemática Enem 2019}
+
+\title{\presentationtitle}
+
+\author[SILVA, S. M.]{Saulo Medeiros da Silva} 
+    
+\institute{Instituto Federal de Educação, Ciência e Tecnologia do Ceará IFCE - \textit{Campus} Cedro}
+
+\date{\today}
+
+
+\begin{document}
+
+
+    \begin{frame}[plain, noframenumbering]
+        \titlepage
+    \end{frame}
+    
+    \begin{frame}[noframenumbering]
+       \tableofcontents
+    \end{frame}
+    
+    \begin{frame}{A questão}
+    
+        Iremos escolher uma questão de Matemática do Enem 2019. O número correspondente em cada caderno é:
+        
+            \begin{center}
+                \circledg{161}\quad\circleda{166}\quad\circledam{171}\quad\circledp{177}
+            \end{center}
+    
+    \end{frame}
+    \section{A questão}
+    \subsection{Enunciado}
+    \begin{frame}{Enunciado da Questão}
+        Construir figuras de diversos tipos, apenas dobrando e cortando papel, sem cola e sem tesoura, é a arte do origami (ori = dobrar; kami = papel), que tem um significado altamente simbólico no Japão.
+        A base do origami é o conhecimento do mundo por base do tato. Uma jovem resolveu construir um cisne usando técnica do origami, utilizando uma folha de papel de \(18cm\) por \(12cm\).
+Assim, começou por dobrar a folha conforme a figura.
+    \end{frame}
+    \subsection{Figura}
+    \begin{frame}{Figura da Questão}
+    
+    \begin{center}
+        
+    
+    \begin{tikzpicture} [scale=.25]
+        \tkzDefPoint(0,0){E}
+        \tkzDefPoint(12,0){C}
+        \tkzDefPoint(12,12){B}
+        \tkzDefPoint(-10,12){A}
+        \tkzDefPoint(2.75,7){D}
+    
+        \tkzMarkRightAngle[fill=blue!20,size=1,draw](E,D,A)
+        \tkzDrawSegment(E,D)
+        \tkzDrawSegment(D,A)
+        \tkzDrawPolygon(E,C,B,A)
+        
+        
+        
+        
+        
+        \tkzLabelSegment[font=\tiny](A,B){$18cm$}
+        \tkzLabelSegment[font=\tiny, right](B,C){$12cm$}
+        \tkzLabelSegment[font=\tiny, below](E,C){$12cm$}
+        
+        % \tkzDrawPoint(E)
+        % \tkzDrawPoint(C)
+        % \tkzDrawPoint(B)
+        % \tkzDrawPoint(A)
+        % \tkzDrawPoint(D)
+        
+        \tkzLabelPoints[font=\tiny, above](A,B,D)
+        \tkzLabelPoints[font=\tiny, below](E,C)
+
+\end{tikzpicture}
+\end{center}
+    \end{frame}
+    \begin{frame}{Pergunta}
+        Após essa primeira dobradura, a medida do segmento AE é:\\\vspace{.25cm}
+        \circled{A}\xspace $2\sqrt{22}$\ cm\\
+        \circled{B}\xspace $6\sqrt{3}$\ cm\\
+        \circled{C}\xspace $12$\ cm\\
+        \circled{D}\xspace $6\sqrt{5}$\ cm\\
+        \circled{E}\xspace $2\sqrt{2}$\ cm\\
+    \end{frame}
+    
+    \begin{frame}{Figura da Questão}
+    
+    \begin{center}
+        
+    
+    \begin{tikzpicture} [scale=.25]
+        \tkzDefPoint(0,0){E}
+        \tkzDefPoint(12,0){C}
+        \tkzDefPoint(12,12){B}
+        \tkzDefPoint(-10,12){A}
+        \tkzDefPoint(2.75,7){D}
+    
+        \tkzMarkRightAngle[fill=verdeif!20,size=1, draw](E,D,A)
+        \tkzDrawSegment(E,D)
+        \tkzDrawSegment(D,A)
+        \tkzDrawPolygon(E,C,B,A)
+        \tkzDrawSegment[color=redif](A,E)
+        
+        
+        
+        \tkzLabelSegment[font=\tiny](A,B){$18cm$}
+        \tkzLabelSegment[font=\tiny, right](B,C){$12cm$}
+        \tkzLabelSegment[font=\tiny, below](E,C){$12cm$}
+        
+         \tkzDrawPoint[color=redif, fill=redif](E)
+        % \tkzDrawPoint(C)
+        % \tkzDrawPoint(B)
+         \tkzDrawPoint[color=redif, fill=redif](A)
+        %  \tkzDrawPoint(D)
+        
+        \tkzLabelPoints[font=\tiny, above](A,B,D)
+        \tkzLabelPoints[font=\tiny, below](E,C)
+
+\end{tikzpicture}
+\end{center}    
+    \end{frame}
+    \section{Entendendo a figura}
+    \begin{frame}{Entendendo a figura}
+    
+    \begin{center}
+        
+    
+    \begin{tikzpicture} [scale=.25]
+        \tkzDefPoint(0,0){E}
+        \tkzDefPoint(12,0){C}
+        \tkzDefPoint(12,12){B}
+        \tkzDefPoint(-10,12){A}
+        \tkzDefPoint(2.75,7){D}
+    
+        \tkzMarkRightAngle[fill=verdeif!20,size=1, draw](E,D,A)
+        \tkzDrawSegment[color=verdeif, dashed](E,D)
+        \tkzDrawSegment(D,A)
+        \tkzDrawSegment(B,C)
+        \tkzDrawSegment(A,B)
+        \tkzDrawSegment[color=redif](A,E)
+        \tkzDrawSegment[dashed, color=verdeif](E,C)
+        
+        
+        \tkzLabelSegment[font=\tiny](A,B){$18cm$}
+        \tkzLabelSegment[font=\tiny, right](B,C){$12cm$}
+        \tkzLabelSegment[font=\tiny, below](E,C){$12cm$}
+        
+         \tkzDrawPoint[color=redif, fill=redif](E)
+        % \tkzDrawPoint(C)
+        % \tkzDrawPoint(B)
+         \tkzDrawPoint[color=redif, fill=redif](A)
+        %  \tkzDrawPoint(D)
+        
+        \tkzLabelPoints[font=\tiny, above](A,B,D)
+        \tkzLabelPoints[font=\tiny, below](E,C)
+
+\end{tikzpicture}
+\end{center}    
+    \end{frame}
+    \begin{frame}{Figura da Questão}
+    
+    \begin{center}
+        
+    
+    \begin{tikzpicture} [scale=.25]
+        \tkzDefPoint(0,0){E}
+        \tkzDefPoint(12,0){C}
+        \tkzDefPoint(12,12){B}
+        \tkzDefPoint(-10,12){A}
+        \tkzDefPoint(2.75,7){D}
+    
+        \tkzMarkRightAngle[fill=verdeif!20,size=1, draw](E,D,A)
+        \tkzDrawSegment[color=verdeif, dashed](E,D)
+        \tkzDrawSegment(D,A)
+        \tkzDrawSegment(B,C)
+        \tkzDrawSegment[color=verdeif, dashed](A,B)
+        \tkzDrawSegment[color=redif](A,E)
+        \tkzDrawSegment[dashed, color=verdeif](E,C)
+        
+        
+        \tkzLabelSegment[font=\tiny](A,B){$18cm$}
+        \tkzLabelSegment[font=\tiny, right](B,C){$12cm$}
+        \tkzLabelSegment[font=\tiny, below](E,C){$12cm$}
+        
+         \tkzDrawPoint[color=redif, fill=redif](E)
+        % \tkzDrawPoint(C)
+        % \tkzDrawPoint(B)
+         \tkzDrawPoint[color=redif, fill=redif](A)
+        %  \tkzDrawPoint(D)
+        
+        \tkzLabelPoints[font=\tiny, above](A,B,D)
+        \tkzLabelPoints[font=\tiny, below](E,C)
+
+\end{tikzpicture}
+\end{center}    
+    \end{frame}
+    \begin{frame}{Figura da Questão}
+    
+    \begin{center}
+        
+    
+    \begin{tikzpicture} [scale=.25]
+        \tkzDefPoint(0,0){E}
+        \tkzDefPoint(12,0){C}
+        \tkzDefPoint(12,12){B}
+        \tkzDefPoint(-10,12){A}
+        \tkzDefPoint(2.75,7){D}
+    
+        \tkzMarkRightAngle[fill=verdeif!20,size=1, draw](E,D,A)
+        \tkzDrawSegment(E,D)
+        \tkzDrawSegment(D,A)
+        \tkzDrawSegment[dashed, color=azulenem](B,C)
+        \tkzDrawSegment(A,B)
+        \tkzDrawSegment[color=redif](A,E)
+        \tkzDrawSegment(E,C)
+        
+        
+        \tkzLabelSegment[font=\tiny](A,B){$18cm$}
+        \tkzLabelSegment[font=\tiny, right](B,C){$12cm$}
+        \tkzLabelSegment[font=\tiny, below](E,C){$12cm$}
+        
+         \tkzDrawPoint[color=redif, fill=redif](E)
+        % \tkzDrawPoint(C)
+        % \tkzDrawPoint(B)
+         \tkzDrawPoint[color=redif, fill=redif](A)
+        %  \tkzDrawPoint(D)
+        
+        \tkzLabelPoints[font=\tiny, above](A,B,D)
+        \tkzLabelPoints[font=\tiny, below](E,C)
+
+\end{tikzpicture}
+\end{center}    
+    \end{frame}
+    \begin{frame}{Figura da Questão}
+    
+    \begin{center}
+        
+    
+    \begin{tikzpicture} [scale=.25]
+        \tkzDefPoint(0,0){E}
+        \tkzDefPoint(12,0){C}
+        \tkzDefPoint(12,12){B}
+        \tkzDefPoint(-10,12){A}
+        \tkzDefPoint(2.75,7){D}
+    
+        \tkzMarkRightAngle[fill=verdeif!20,size=1, draw](E,D,A)
+        \tkzDrawSegment(E,D)
+        \tkzDrawSegment[dashed, color=azulenem](D,A)
+        \tkzDrawSegment[dashed, color=azulenem](B,C)
+        \tkzDrawSegment(A,B)
+        \tkzDrawSegment[color=redif](A,E)
+        \tkzDrawSegment(E,C)
+        
+        
+        \tkzLabelSegment[font=\tiny](A,B){$18cm$}
+        \tkzLabelSegment[font=\tiny, right](B,C){$12cm$}
+        \tkzLabelSegment[font=\tiny, below](E,C){$12cm$}
+        
+         \tkzDrawPoint[color=redif, fill=redif](E)
+        % \tkzDrawPoint(C)
+        % \tkzDrawPoint(B)
+         \tkzDrawPoint[color=redif, fill=redif](A)
+        %  \tkzDrawPoint(D)
+        
+        \tkzLabelPoints[font=\tiny, above](A,B,D)
+        \tkzLabelPoints[font=\tiny, below](E,C)
+
+\end{tikzpicture}
+\end{center}    
+    \end{frame}
+    \section{Solução}
+    \begin{frame}{Solução}
+        \begin{minipage}{.5\textwidth}
+            \begin{tikzpicture} [scale=.25]
+                \tkzDefPoint(0,0){E}
+                \tkzDefPoint(-10,12){A}
+                \tkzDefPoint(2.75,7){D}
+    
+                
+                \tkzDrawPolygon[fill=red!20](E,A,D)
+                \tkzMarkRightAngle[fill=blue!20,size=1,draw](E,D,A)
+                \tkzLabelSegment[font=\tiny, right](D,E){$6cm$}
+                \tkzLabelSegment[font=\tiny, above](D,A){$12cm$}
+        
+                \tkzDrawPoint[fill=redif, color=redif](E)
+                \tkzDrawPoint[fill=redif, color=redif](A)
+                \tkzDrawPoint[fill=redif, color=redif](D)
+                
+                \tkzLabelPoints[font=\tiny, above](E,A,D)
+                \tkzLabelSegment[left, font=\small](A,E){h}
+        \end{tikzpicture}
+    \end{minipage}
+\begin{minipage}{.45\textwidth}
+    \textbf{Teorema de Pitágoras}
+    \small{\begin{gather*}
+        a^2=b^2+c^2\\
+       \invisible<1>{h^2=12^2+6^2}\\
+       \invisible<1-2>{h^2=144+36}\\
+        \invisible<1-3>{h^2=180}\\
+        \invisible<1-4>{h=\sqrt{180}}\\
+        \invisible<1-5>{h=\sqrt{6^2\cdot 5}}\\
+        \invisible<1-6>{h=6\sqrt{5}}
+        \invisible<1-7>{}
+    \end{gather*}}
+\end{minipage}
+    \end{frame}
+    \begin{frame}{Solução}
+        Alternativa \circled{D}
+    \end{frame}
+    \begin{frame}
+    \centering
+        Obrigado!
+    \end{frame}
+\end{document}

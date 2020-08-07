@@ -1,0 +1,145 @@
+
+\usepackage[brazilian]{babel}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{multimedia}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{xspace}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{framed,pifont}
+
+
+
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+
+\usetkzobj{all}
+\usetikzlibrary{babel}
+\usepackage{geometry}
+\usepackage[absolute,overlay]{textpos}
+\usepackage[tikz]{bclogo}
+
+\setbeamertemplate{navigation symbols}{}
+
+\definecolor{azulenem}{HTML}{2E64FE}
+\definecolor{verdeif}{HTML}{2f9e41}
+\definecolor{redif}{HTML}{cd191e}
+\definecolor{blackif}{HTML}{000000}
+
+\setbeamerfont{structure}{size=\larger}
+\setbeamerfont{title}{size=\Large}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{author in head/foot}{size=\footnotesize}
+\setbeamerfont{date in head/foot}{size=\footnotesize}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{block title}{size=\normalsize}
+\setbeamerfont{block body}{size=\small}
+
+\setbeamercolor*{normal text}{fg=black}
+\setbeamercolor*{author in head/foot}{fg=white!90!black}
+\setbeamercolor*{date in head/foot}{fg=white}
+\setbeamercolor*{date}{fg=white!60!black}
+\setbeamercolor*{frametitle}{fg=verdeif}
+\setbeamercolor*{framesubtitle}{fg=white!20!black}
+\setbeamercolor*{structure}{fg=black}
+\setbeamercolor*{title}{fg=verdeif}
+\setbeamercolor*{author}{fg=blackif}
+\setbeamercolor*{subtitle}{fg=black}
+\setbeamercolor*{block title}{bg=verdeif!20, fg=verdeif}
+\setbeamercolor*{itemize item}{fg=redif}
+\setbeamertemplate{itemize/enumerate body begin}{\footnotesize}
+\setbeamercolor*{block body}{bg=verdeif!10, fg=black}
+\setbeamercolor*{block title alerted}{bg=verdeif!20, fg=verdeif}
+\setbeamercolor*{block body alerted}{bg=verdeif!10, fg=blackif
+}
+\setbeamercolor*{block title example}{bg=verdeif!20, fg=verdeif}
+\setbeamercolor*{block body example}{bg=verdeif!10, fg=blackif}
+\setbeamercolor*{navigation symbols}{bg=white, fg=white}
+\setbeamercolor*{section in head}{bg=verdeif, fg=white}
+\setbeamercolor*{item projected}{fg=white, bg=verdeif}
+\setbeamercolor*{section in toc}{fg=verdeif}
+
+\setbeamersize{text margin left=0.8cm}
+\setbeamersize{text margin right=0.8cm}
+
+\setbeamertemplate{enumerate item}[ball]
+\setbeamertemplate{blocks}[shadow=false]
+
+\setbeamertemplate{section in toc shaded}[default][50]
+
+\setbeamertemplate{title page}{
+	\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imgs/Modelo Slides IFCE.png}};
+
+	\begin{flushleft}
+		\begin{textblock*}{90mm}(45mm,25mm)
+	            {
+    	            \usebeamercolor[fg]{title}
+    	            \usebeamerfont{title}
+    				    \inserttitle
+				}
+		\end{textblock*}
+    \end{flushleft}
+	\begin{flushleft}
+		\begin{textblock*}{90mm}(45mm,50mm)
+	            {
+\usebeamercolor[fg]{author}
+    				\insertauthor\\
+    				\footnotesize\insertinstitute
+				}
+		\end{textblock*}
+	\end{flushleft}	}
+
+\setbeamertemplate{background}{
+	\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight, trim= 1 1 1 1]{imgs/Modelo Slides IFCE rodapé.png}};
+
+}
+
+\setbeamertemplate{background canvas}{{\setbeamertemplate{logo}{}}
+}
+
+
+
+\setbeamertemplate{footline}
+{
+        \leavevmode
+        \begin{beamercolorbox}[dp=5ex, right, wd=.95\textwidth]{author in head/foot}
+            {
+                \usebeamerfont{author in head/foot}\insertshortauthor
+                \hspace*{3ex} \insertshortdate{}
+            }
+        \end{beamercolorbox}
+
+}
+
+\setbeamertemplate{headline}
+{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=0.9ex,left]{section in head}
+    {
+    
+    }
+    \end{beamercolorbox}
+}
+
+\newcommand*\circledam[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,black,fill=yellow,inner sep=2pt] (char) {\bf#1};}}
+            
+            \newcommand*\circleda[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,black,fill=azulenem,inner sep=2pt] (char) {\bf#1};}}
+            
+            \newcommand*\circledp[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,black,fill=pink,inner sep=2pt] (char) {\bf#1};}}
+            
+            \newcommand*\circledg[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,black,fill=lightgray,inner sep=2pt] (char) {\bf#1};}}
+            
+            \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,white,fill=verdeif,inner sep=1pt] (char) {\small\bf#1};}\vspace{.25cm}}
